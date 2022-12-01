@@ -1,4 +1,9 @@
-
-    {
-        "notesArray": []
-    }
+{
+    "notes": [
+      {
+        "title": "How to Use Note Taker (Don't Delete Me!)",
+        "text": "Welcome to the Note Taker web app! \n\nThis app is pretty cool! It's a simple app to use! \n\nJust click on the plus button to create a new note, then fill in the Note Title and Note Text fields! \n\nClick save and it'll appear in your list to the left. \n\nTo delete a note, click the red Trash icon next to the note.,
+        "id": "bupm3g6j2df08p6czsxk"
+      }
+    ]
+  }
