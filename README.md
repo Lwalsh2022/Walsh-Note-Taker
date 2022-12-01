@@ -1,6 +1,6 @@
 # Walsh-Note-Taker
 
-<img src = "Images\LisaWalshPhotographyHeaderImage2.png" alt = "logo">
+<img src = "Develop\images\LisaWalshPhotographyHeaderImage2.png" alt = "logo">
 
 
 
