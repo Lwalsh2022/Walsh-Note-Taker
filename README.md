@@ -1,43 +1,26 @@
 # Walsh-Note-Taker
 
-
-
-pasted from previous challenge!!!
-
-
-
 <img src = "Images\LisaWalshPhotographyHeaderImage2.png" alt = "logo">
 
 
 
-# About
-A 5 day weather forecast page that runs in the web browser and features dynamically updated HTML and CSS using an Open Weather API.
+Write, save, and delete notes!
 
-# User Story
-AS a traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the the wind speed
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
 
-# Build
-Google Fonts allows for the usage of custom fonts that do not have to be installed on the user's machine
-Font Awesome allows for the usage of custom icons
-jQuery powers the dynamic rendering of the html content based on user input
-moment.js is used to manipulate date values 
+Front-end starter code from Xandromus
+
+To add a note: Fill in the title and body, then hit the floppy disk save icon.
+You will see your note saved in the left side column.
+Hitting the '+' instead if the floppy disk will send your note into oblivian 🧙‍ (won't fix)
+To view an existing note you simply click on it from the left coolumn.
+The '+' is for switching from viewing an existing note to creating a new one.
+To delete a note: Hit the red trashcan icon on an existing note. (or the + on the one you're currently writing 🤦‍♂️)
+
+# Usage
+This application uses an Express.js back-end to save and retrieve note data from a JSON file.
+
 
 # Screenshot
-
-<img src = "Images\Screenshot.jpg" alt = "screenshot">
-
-
 
 ## License
 
