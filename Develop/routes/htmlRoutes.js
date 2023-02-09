@@ -1,22 +1,13 @@
-// is this supposed to be cost notesRoutes = require('express').Router(); ?
-
+const path = require('path');
 const router = require('express').Router();
-const { createNewNote, deleteNote } = require('../lib/notes');
-let { notesArray } = require('../../db/notes');
 
-// notes are available at /api/notes in JSON format
-app.get('/notes', (req, res) => {
-    let results = notesArray;
-    res.json(results);
-    });
+//All other routes respond with the index.html file
+router.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "./Public/index.html"));
+});
+//"/notes" responds with the notes.html file
+router.get("/notes", (req, res) => {
+    res.sendFile(path.join(__dirname, "../Public/notes.html"));
+});
 
-    app.post('/notes', (req, res) => {
-        // set id based on what the next index of the array will be
-        if(notesArray) {
-            req.body.id = notesArray.length.toString();
-            } else {
-                req.body.id = '0'}
-                res.json(createNewNote(req.body, notesArray));  
-            });
-                
 module.exports = router;
