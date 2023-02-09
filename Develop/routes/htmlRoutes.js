@@ -1,7 +1,7 @@
 // is this supposed to be cost notesRoutes = require('express').Router(); ?
 
 const router = require('express').Router();
-const { createNewNote, deleteNote } = require('../../lib/notes');
+const { createNewNote, deleteNote } = require('../lib/notes');
 let { notesArray } = require('../../db/notes');
 
 // notes are available at /api/notes in JSON format
