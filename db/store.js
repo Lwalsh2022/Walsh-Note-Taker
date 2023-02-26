@@ -2,7 +2,7 @@ const util = require('util');
 const fs = require('fs');
 
 //This package will be used to generate unique ids www.npmjs.com/package/uuid
-const { v1: uuidv1 } = require('uuid');
+const { v1: uuidv1 } = require('uuid/v1');
 
 const readFileAsync = util.promisify(fs.readFile);
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -39,14 +39,16 @@ class Store {
             .then((notes) => [...notes, newNote])
             .then((updatedNotes) => this.write(updatedNotes))
             .then(() => newNote);
-
-        removeNote(id); {
+    }
+        removeNote(id) {
             //Get all notes, remove the note with the given id, write the filtered notes        
             return this.getNotes()
              .then((notes) => notes.filter((note) => note.id !== id))
              .then((filteredNotes) => this.write(filteredNotes));  
             }
-        }
-    }
+}
+
+
+
 module.exports = new Store();
 
